@@ -16,6 +16,7 @@ class ContactsController < ApplicationController
   def new
     @contact = Contact.new
     @contact.build_address
+
     options_for_select
   end
 
@@ -66,20 +67,20 @@ class ContactsController < ApplicationController
 
   private
 
+  def options_for_select
+    @kind_options_for_select = Kind.all
+  end
 
-    def options_for_select
-      @kind_options_for_select = Kind.all
-    end
-    # Use callbacks to share common setup or constraints between actions.
-    def set_contact
-      @contact = Contact.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def contact_params
-      params.require(:contact).permit(:name, :email, :kind_id, :rmk, 
-        address_attributes: [:street, :city, :state],
-        phone_attributes: [:id, :phone, :_destroy])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_contact
+    @contact = Contact.find(params[:id])
+  end
 
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def contact_params
+    params.require(:contact).permit(:name, :email, :kind_id, :rmk,
+                                    address_attributes: [:street, :city, :state],
+                                    phones_attributes: [:id, :phone, :_destroy])
+  end
 end
