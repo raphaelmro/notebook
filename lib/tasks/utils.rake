@@ -35,11 +35,6 @@ namespace :utils do
 
     puts "Gerando os endereços(Phones)...[OK]"
 
-
-
-
-
-
   end
 
 end
