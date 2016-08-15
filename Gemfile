@@ -7,6 +7,8 @@ gem 'i18n', '~> 0.7.0'
 gem 'rails-i18n', '~>4.0.0'
 # O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.
 gem 'lerolero_generator'
+# Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms http://github.com/nathanvda/cocoon
+gem "cocoon"
 
 gem 'faker'
 # Use sqlite3 as the database for Active Record
