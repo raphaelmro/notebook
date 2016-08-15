@@ -9,6 +9,8 @@ gem 'rails-i18n', '~>4.0.0'
 gem 'lerolero_generator'
 # Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms http://github.com/nathanvda/cocoon
 gem "cocoon"
+# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Rails 3 and 4
+gem 'kaminari'
 
 gem 'faker'
 # Use sqlite3 as the database for Active Record
