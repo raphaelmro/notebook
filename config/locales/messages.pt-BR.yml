@@ -1,4 +1,5 @@
 "pt-BR":
   messages:
-    confirm: "Tem certeza?"
-    listing: "Listando"
+    confirm: Tem certeza?
+    listing: Listando
+    errors: erros ocorreram...
