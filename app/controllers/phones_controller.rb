@@ -5,6 +5,11 @@ class PhonesController < ApplicationController
   # GET /phones.json
   def index
     @phones = Phone.all
+    
+    respond_to do |format|
+        format.html { @phone = Phone.all }
+        format.js
+    end
   end
 
   # GET /phones/1
