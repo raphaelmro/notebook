@@ -4,20 +4,12 @@ class PhonesController < ApplicationController
   # GET /phones
   # GET /phones.json
   def index
-<<<<<<< HEAD
       respond_to do |format|
         format.html {@phones = Phone.all}
         format.js { }
       end
-=======
-    @phones = Phone.all
-    
-    respond_to do |format|
-        format.html { @phone = Phone.all }
-        format.js
-    end
->>>>>>> 99a3a1900e0fda123281a97099de62dcaa0af914
   end
+
 
   # GET /phones/1
   # GET /phones/1.json
